@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-padding-top:1em ;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+:root{
+   --main-color:rgb(26, 60, 81) ;
+   --text-color: rgb(12, 24, 55);
+   --bg-color:white;
+}
+section{
+    padding: 4em 0 2em;
+}
+
+body{
+      background: linear-gradient(to left,rgb(4, 28, 46),var(--main-color));
+    color: var(--text-color);
+}
+.container{
+    max-width: 1068px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    display: block;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 100;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 35px;
+}
+#menu{
+ font-size: 24px;
+ cursor: pointer;
+ color: var(--bg-color);
+ display: none;
+}
+.logo{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: var(--text-color);
+}
+.logo span{
+    font-size: 1.5em;
+    color: var(--main-color);
+}
+.navbar{
+    display: flex;
+    column-gap:2em ;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar a:hover,
+.navbar .active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+#search{
+    font-size: 24px;
+    cursor: pointer;
+}
+.search-box{
+    position: absolute;
+    top: 110%;
+    right: 10%;
+    left: 10%;
+    background:var(--bg-color) ;
+    box-shadow: 4px 4px 20px rgb(15 54 55/10%);
+    border: 1px solid var(--main-color);
+    border-radius: 30px;
+    clip-path: circle(0% at 100% 0%);
+}
+.search-box input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px;
+    background: transparent;
+    font-size: 1em;
+}
+.search-box.active{
+    clip-path: circle(144% at 100% 0%);
+    transition: 0.4s;
+}
+.home{
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+    min-height: 1000px;
+    display: flex;
+    align-items: center;
+}
+.home {
+    background-color: #f9f9f9;
+    background-size: 10px 10px;
+  }
+  
+.home img{ 
+    width: 50%;
+    align-self: flex-end;
+}
+.home-texte{
+    
+    padding-left: 130px;
+}
+.home-texte h1{
+    font-size: 2.4em;
+    padding: 1em;
+}
+.home-texte span{
+     color: var(--main-color);
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-weight: 800;
+}
+.btn{
+    margin: 1em;
+    margin-top: 2em;
+    padding :10px 22px;
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-weight: 500;
+}
+.btn:hover{
+    background: rgb(71, 103, 127);
+}
+.heading{
+    text-align: center;
+}
+.heading span{
+    font-weight: 700;
+    color: var(--bg-color);
+    width: 100%;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid var(--bg-color);
+    animation: app 3s infinite;
+}
+@keyframes app {
+    0%{
+        border-bottom: 2px solid white;
+      
+    }
+    50%{
+        border-bottom: 5px solid var(--main-color);
+    
+    }
+    100%{
+        border-bottom: 1px solid var(--bg-color);
+    }
+}
+.heading h2{
+    padding-top: 1em;
+    margin-top: 1em;
+    color: var(--bg-color);
+}
+.cars-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2em;
+    margin-top: 2em;
+}
+.box{
+    flex: 1 1 17em;
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.box img:hover{
+    transform: scale(1.1);
+    transition: 0.7s;
+    opacity: 0.5;
+  filter: grayscale(80%);
+}
+.box h2{
+   position: absolute; 
+   bottom: 1em;
+   left: 1em;
+   font-weight: 400;
+   font-size: 1em;
+   padding: 8px;
+   border-radius: 13px;
+   visibility: hidden;
+}
+.box:hover h2{
+   color: var(--bg-color); 
+   visibility: visible;
+}
+
+/*  vendre */
+.deco{
+    padding: 1em;
+    background: var(--bg-color);
+    border-radius: 30px;
+    position: absolute;
+    top: 15%;
+    left:0;
+    transform: translateX(25px);
+}
+.deco2{
+    padding: 1em;
+    background: var(--bg-color);
+    border-radius: 30px;
+    position: absolute;
+    top: 20%;
+    right:10%;
+}
+.deco3{
+    padding: 1em;
+    background: var(--bg-color);
+    border-radius: 30px;
+    position: absolute;
+    top: 70%;
+    right: 40%;
+    transform: translateY(50%);
+}
+.deco4{
+    padding: 1em;
+    background: var(--main-color);
+    border-radius: 30px;
+    position: absolute;
+    top: 20%;
+    left:35%;
+    transform: translateY(25px);
+}
+.deco5{
+    padding: 1em;
+    background: var(--main-color);
+    border-radius: 30px;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    transform: translateY(25px);
+}
+.deco6{
+    padding: 1em;
+    background: var(--bg-color);
+    border-radius: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    transform: translateY(25px);
+}
+.deco8{
+    padding: 1em;
+    background: var(--text-color);
+    border-radius: 30px;
+    position: absolute;
+    bottom: 9%;
+    right: 9%;
+    transform: translateY(25px);
+}
+.bvendre{
+    background: linear-gradient(to right,black,var(--main-color));
+    display: flex;
+    justify-content: center;
+}
+.hvendre{
+    background: var(--bg-color);
+}
+.vendre{  
+    border-left: 7px solid var(--bg-color);  
+    width: 75%;
+    height: 75vh;
+    margin-bottom: 10em;
+    margin-top: 10em;
+    color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    row-gap: 2em;
+    align-items: center;
+}
+.vendre form{
+    backdrop-filter: blur(2px);
+    padding: 3em;
+    margin-left: 2em;
+}
+.vendre h2{
+    font-size: 2em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid var(--main-color);
+}
+.vendre form h3{
+    font-weight:700 ;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    animation: color 5s infinite;
+}
+@keyframes color{
+    0%{
+        color: var(--main-color);
+    }
+    50%{
+        color: var(--bg-color);
+    }
+    100%{
+        color: var(--main-color);
+    }
+}
+.vendre form label{
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: 0.3em;
+    font-weight: 600;
+}
+.vendre form input{
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 0.7em;
+    margin: 1em;
+}
+.vendre button{
+    border-radius: 15px;
+    padding: 0.5em;
+    margin: 1em;
+    width: 10vw;
+    font-weight: 750;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+}
+.vendre a{
+    color: rgba(145, 184, 218, 0.634);
+}
