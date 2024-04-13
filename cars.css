@@ -6,7 +6,16 @@ main{
     justify-content: center;
     align-content: center;
 }
-
+.carousel-items img{
+    max-width: 75%;
+    display: flex;
+    margin-left: 4em;
+    margin-bottom:1em ;
+    margin-top: 1em;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 3px 3px 40px #758b9e;
+}
 .carousel-items {
     display: flex;
     overflow-x: scroll;
@@ -118,5 +127,11 @@ img {
 }
 
 p {
+    padding-top: 1em;
+    color: var(--bg-color);
     margin: 0 0 .5rem;
+}
+main{
+    display: flex;
+    flex-direction: column;
 }

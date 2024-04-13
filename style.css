@@ -104,7 +104,7 @@ header{
     max-width: 1300px;
     margin: auto;
     width: 100%;
-    min-height: 1000px;
+    min-height: 750px;
     display: flex;
     align-items: center;
 }
@@ -115,10 +115,15 @@ header{
   
 .home img{ 
     width: 50%;
+    float: right;
     align-self: flex-end;
+    padding: 1em;
+    margin-bottom: 2em;
 }
 .home-texte{
-    
+    float: left;
+    width: 50%;
+
     padding-left: 130px;
 }
 .home-texte h1{
